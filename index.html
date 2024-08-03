@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c752f077b8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="img/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi! I'm <span>Soumili Bose</span> <br>and I am a Fresher.</h1>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="img/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Resourceful team player with experience with common software applications and social media platforms. Well-versed in business organization and strategies for successfully modernizing workplaces. Skilled at project support with proven history of solutions-oriented problem-solving.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                            <li><span>Web Development</span><br>Front End Development <br> HTML, CSS, JaveScript</li>
+                            <li><span>Programming Language</span><br>C, C++, Java, Python</li>
+                            <li><span>Tools</span><br>My SQL, MS Excel,<br> MS Word, MS PowerPoint</li>
+                            <li><span>Operating System</span><br>Linux, Windows</li>
+                            <li><span>Soft Skills</span><br>Teamwork, Leadership, <br> Time Management, Project Management</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                            <li><span>2024 Apr-Jun</span><br>Google AI-ML virtual Internship <br>Eduskills Foundation</li>
+                            <li><span>2024 Jan-Mar</span><br> Zero Trust Cloud Security virtual Internship <br>Eduskills Foundation</li>
+                            <li><span>2023 Sep-Nov</span><br> Intelligent Automation virtual Internship <br>Eduskills Foundation</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                            <li><span>2021-2025</span><br>Techno India University <br> Btech CSE</li>
+                            <li><span>2019-2021</span><br>Uttarpara Children's Own Home <br>WBCHSE</li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>Front End Development using simple HTML, CSS, JavaScript.</p>
+                    <a href="https://docs.google.com/document/d/1IzjyBP4o9YmG66Rj-UdjJ_OWnjoVuBD8OvsYlvKJVR8/edit?usp=sharing">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-database"></i>
+                    <h2>Database Management System</h2>
+                    <p>Handling Databases using MySQL.</p>
+                    <a href="https://docs.google.com/document/d/1IzjyBP4o9YmG66Rj-UdjJ_OWnjoVuBD8OvsYlvKJVR8/edit?usp=sharing">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-toolbox"></i>
+                    <h2>Tools & Project Management</h2>
+                    <p>Handling Projects using MS Excel, MS Word, MS PowerPoint.</p>
+                    <a href="https://docs.google.com/document/d/1IzjyBP4o9YmG66Rj-UdjJ_OWnjoVuBD8OvsYlvKJVR8/edit?usp=sharing">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Works</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="img/work-1.png">
+                    <div class="layer">
+                        <h3>Attendance Management System</h3>
+                        <p>This is an interactive wesite that takes attendance and store it into the local storage using HTML, CSS, JavaScript.</p>
+                    <a href="https://github.com/Soumili1308/Attendance-Management-System"><i class="fa-solid fa-link"></i></a>    
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="img/work- 2.png">
+                    <div class="layer">
+                        <h3>Hospital Database Management System</h3>
+                        <p>This database contains all foreign and primary keys for easy access of the data in the database using MySQL.</p>
+                    <a href="https://github.com/Soumili1308/Hospital-Database-Management-System"><i class="fa-solid fa-link"></i></a>    
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/Soumili1308" class="btn">See More</a>
+</div>
+    </div>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i> soumilibose.1308@gmail.com</p>
+                    <p><i class="fa-solid fa-mobile-screen"></i> 7439561785</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/soumili-bose-93b058304/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/_soumili_basuthakur_/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://github.com/Soumili1308"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="img/CV of Soumili Bose.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p><i class="fa-regular fa-copyright"></i> Soumili Bose, 2024. All rights reserved.</p>
+        </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for(tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu() {
+            sidemenu.style.right = "0";  
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";  
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbw7S9sbe4J8rLjW4zgI0B7qcWmxWBO3XGgv1LzLdwEyDdIul9Ak--FR5ly4_bi2L5UV/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully."
+                setTimeout(function() {
+                    msg.innerHTML = ""
+                }, 5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
